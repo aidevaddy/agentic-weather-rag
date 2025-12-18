@@ -37,41 +37,15 @@ This project is designed to showcase **clean architecture**, **agentic decision-
 
 ---
 
-## 📂 Project Structure
-
-agentic-rag-pipeline/
-├── app.py # Streamlit UI
-├── graph/
-│ ├── graph.py # LangGraph wiring
-│ ├── router.py # LLM-based router
-│ ├── nodes.py # Weather node
-│ └── state.py # Shared graph state
-├── rag/
-│ ├── loader.py # PDF loading & chunking
-│ ├── embeddings.py # Qdrant vector store
-│ └── retriever.py # Retriever logic
-├── tools/
-│ └── weather.py # Weather tool
-├── llm/
-│ └── provider.py # Ollama LLM setup
-├── data/
-│ └── world_cities.pdf # Sample document for RAG
-├── scripts/
-│ ├── test_graph.py # Graph sanity check
-│ └── test_rag.py # RAG smoke test
-├── tests/ # Unit tests
-├── README.md
-└── .gitignore
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone the Repository
 
+
 ```bash
 git clone https://github.com/<your-username>/agentic-rag-pipeline.git
 cd agentic-rag-pipeline
+```
 
 ### 2️⃣ Create & Activate Virtual Environment
 
