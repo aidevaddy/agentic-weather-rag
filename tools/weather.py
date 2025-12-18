@@ -9,8 +9,7 @@ class WeatherResult(BaseModel):
     unit: str
     description: str
 
-@tool
-def get_current_weather(city: str)->dict:
+def _get_current_weather(city: str)->dict:
     """
     Fetch weather for a current city using OpenWeatherMap API
 
@@ -49,4 +48,7 @@ def get_current_weather(city: str)->dict:
 
     return result.model_dump()
 
-print(get_current_weather.invoke({"city": "London"}))
+@tool
+def get_current_weather(city: str)->dict:
+    """Thin wrapper for Tool"""
+    return _get_current_weather(city)
