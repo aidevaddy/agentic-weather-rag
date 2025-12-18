@@ -5,3 +5,5 @@ langgraph==0.2.39
 langsmith==0.1.137
 requests==2.32.5
 pytest==9.0.2
+qdrant-client==1.9.1
+pypdf==6.4.2
